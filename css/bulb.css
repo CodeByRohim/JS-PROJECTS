@@ -1,0 +1,175 @@
+*{
+  padding: 0;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Courier New', Courier, monospace;
+  background: radial-gradient(#555,#111);
+}
+a{
+  font-size: 18px;
+  font-weight: 700;
+  color: #2e2b66;
+  text-decoration: none;
+}
+
+.box{
+  display: flex;
+  margin-top: 10%;
+  align-items: center;
+}
+
+
+/* electro button */
+button {
+  background-color: #333;
+  color: #fff;
+  font-size: 18px;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.5), 0 0 40px rgba(0, 255, 255, 0.3), 0 0 60px rgba(0, 255, 255, 0.1);
+}
+
+button::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background-color: rgba(0, 255, 255, 0.2);
+  transform: rotate(45deg);
+  transition: 0.5s ease-in-out;
+}
+
+button:hover::before {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 255, 255, 0.3);
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.5), 0 0 40px rgba(0, 255, 255, 0.4), 0 0 60px rgba(0, 255, 255, 0.2);
+}
+
+button:hover {
+  box-shadow: 0 0 30px rgba(0, 255, 255, 0.7), 0 0 60px rgba(0, 255, 255, 0.5), 0 0 90px rgba(0, 255, 255, 0.3);
+  color: #0ff;
+}
+
+
+button span{
+  display: block;
+}
+.box img{
+  transform: rotate(542deg);
+}
+.box.on img{
+background: #d3ba2d;
+ box-shadow: 0 0 50px #d3ba2d, 
+0 0 100px #d3ba2d,
+0 0 150px #d3ba2d,
+0 0 280px #d3ba2d,
+0 0 250px #d3ba2d,
+0 0 300px #d3ba2d,
+0 0 350px #d3ba2d; 
+border-radius: 50%;
+}
+
+#bulb{
+  position: relative;
+}
+
+.wire
+{
+position: absolute;
+left: calc(50% - 2px);
+bottom: 80%;
+width: 5px;
+height: 60vh;
+background: #343232;
+z-index: 1;
+}
+a{
+  margin-bottom: 50px;
+}
+
+.switch{
+margin-bottom: 50px;
+justify-content: center;
+align-items: center;
+text-align: center;
+}
+
+
+
+/* SCROLL STARTS HERE */
+.icon{
+  margin-top: 10px;
+  color: rgba(0, 255, 255, 0.3);
+   margin-left: 31.5%; 
+  width: 350px;
+  height: 100px;
+
+}
+
+/* section start here */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 300 800;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/opensans/v40/memtYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWqWuk6F15M.woff2) format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+ html, body {
+  font-family: "Open Sans", serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+  font-variation-settings: "wdth" 800;
+  color:#111;
+} 
+
+section {
+  width:100%;
+  height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  
+}
+
+h1 {
+  width:32vw;
+}
+
+h1 span {
+  display:block;
+  font-size:7vw;
+  position:relative;
+  margin-bottom:3vw;
+  padding:0 3vw;
+  width: fit-content;
+  --bg:transparent;
+}
+
+h1 span:after {
+  z-index:-1;
+  border-radius:1vw;
+  content: "";
+  width:100%;
+  height:33%;
+  left:0;
+  bottom:0;
+  position: absolute;
+  background:var(--bg);
+}
+/* SCROLL ENDS HERE */
